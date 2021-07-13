@@ -10,12 +10,49 @@
 
 <div class="row">
     <h1>DANH SÁCH CÁC KHÓA HỌC SẮP DIỄN RA</h1>
-    <ul>
+    <ul class="course">
         @foreach (var item in Model)
         {
             <li>
-                @item.DateTime.ToString("dd/MM/yyyy HH:mm") - @item.Name
+                <div class="date">
+                    <div class="month">
+                        @item.DateTime.ToString("MM")
+                    </div>
+                    <div class="day">
+                        @item.DateTime.ToString("dd")
+                    </div>
+                </div>
+                <div class="details">
+                    <span class="lecture">
+                        @item.Name
+
+                    </span>
+                    <span class="category">
+                        @item.Category.Name
+                    </span>
+                    <button data-course-id="@item.Id" class="btn btn-default btn-sm js-tongle-attendances">Going?</button>
+                </div>
             </li>
         }
     </ul>
+    @section scripts{
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".js-tongle-attendances").click(function (e) {
+                    var button = $(e.target);
+                    $.post("/api/attendances", { Id: button.attr("data-course-id") })
+                        .done(function () {
+                            alert("Register course succesfully");
+                            button
+                                .removeClass("btn-default")
+                                .addClass("btn-info")
+                                .text("Going");
+                        }).fail(function () {
+                            alert("Somthing fail");
+                        })
+                })
+            });
+        </script>
+    }
+
 </div>

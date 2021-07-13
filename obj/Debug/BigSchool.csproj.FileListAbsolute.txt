@@ -106,3 +106,9 @@ D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.Cor
 D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.CopyComplete
 D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\obj\Debug\BigSchool.dll
 D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\obj\Debug\BigSchool.pdb
+D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\bin\System.Net.Http.Formatting.dll
+D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\bin\System.Web.Http.dll
+D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\bin\System.Web.Http.WebHost.dll
+D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\bin\System.Net.Http.Formatting.xml
+D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\bin\System.Web.Http.xml
+D:\ONLINE\TH Lập trình Web\BigSchool\BigSchool\bin\System.Web.Http.WebHost.xml
